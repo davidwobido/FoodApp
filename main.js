@@ -1,14 +1,16 @@
-import { createTitleComponent } from "./lib/";
-import { createSelectionComponent } from "./lib/";
-import { createFooterComponent } from "./lib/";
+import { createTitleComponent } from "./lib/titleComponent.js";
+// import { createSelectionComponent } from "./lib/";
+// import { createFooterComponent } from "./lib/";
 
 function createApp() {
+  const appElement = document.querySelector("#app");
+
   const titleComponent = createTitleComponent();
-  const selectionComponent = createSelectionComponent();
-  const footerComponent = createFooterComponent();
+  //   const selectionComponent = createSelectionComponent();
+  //   const footerComponent = createFooterComponent();
 
   appElement.append(titleComponent);
-  appElement.append(selectionComponent);
-  appElement.append(footerComponent);
+  //   appElement.append(selectionComponent);
+  //   appElement.append(footerComponent);
 }
 createApp();
