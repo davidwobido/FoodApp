@@ -9,7 +9,7 @@
 :root {
   /* COLORS */
   --color-primary: #26698b;
-  --color-text: #c9d1d9;
+  --color-text: white;
   --color-background: #ffe7b3;
   --color-secondary: #ff8473;
 
@@ -24,7 +24,7 @@
 body {
   font-family: var(--font-family);
   color: var(--color-text);
-  background-color: white;
+  background-color: #fff9ec;
   margin: 0;
 }
 
@@ -40,7 +40,14 @@ button {
   border-radius: var(--border-radius);
   border: 0;
 }
+
+#app {
+  display: grid;
+  justify-content: center;
+}
+
 .headline {
+  margin-top: 3rem;
   display: grid;
   justify-content: center;
 }
@@ -48,7 +55,7 @@ button {
 .sectionOptions {
   width: fit-content;
   background-color: var(--color-background);
-  border-radius: var(--border-radius);
+  border-radius: 1rem;
   display: grid;
   gap: 1rem;
   grid-template-columns: 1fr 1fr;
@@ -60,5 +67,31 @@ button {
   background: var(--color-primary);
   font-size: 1rem;
   padding: 1rem 2rem;
-  color: white;
+  color: var(--color-text);
+}
+
+.inputField,
+.buttonSubmit {
+  grid-column-start: 1;
+  grid-column-end: 3;
+  padding: 1rem;
+  border: 0;
+}
+
+.buttonSubmit {
+  background-color: var(--color-secondary);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  color: var(--color-text);
+  letter-spacing: 0.35rem;
+}
+
+.footerwrapper {
+  position: absolute;
+  bottom: 0;
+  width: 100vw;
+  background-color: var(--color-background);
+  padding: 0.5rem 2rem;
+  font-size: 0.75rem;
+  color: var(--color-primary);
 }
