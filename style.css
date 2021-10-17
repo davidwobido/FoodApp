@@ -77,7 +77,11 @@ button {
   width: fit-content;
   border: 0;
   width: 100%;
-  color: var(--color-background);
+}
+
+.inputField::placeholder {
+  opacity: 40%;
+  font-size: 1.3em;
 }
 
 .buttonSubmit {
@@ -91,6 +95,10 @@ button {
   width: 12rem;
   justify-self: center;
   transform: translateY(1em);
+}
+
+.buttonSubmit:hover {
+  letter-spacing: 0.9rem;
 }
 
 .radioButtons {
