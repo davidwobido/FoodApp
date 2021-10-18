@@ -65,21 +65,21 @@ button {
   padding: 3rem 4rem;
 }
 
-.button_options {
+.buttonOptions {
   background: var(--color-primary);
   font-size: 1rem;
   padding: 1rem 3rem;
   color: var(--color-text);
+  width: 0;
 }
 
-.inputField {
+.inputName {
   padding: 1rem 1rem;
-  width: fit-content;
   border: 0;
   width: 100%;
 }
 
-.inputField::placeholder {
+.inputName::placeholder {
   opacity: 40%;
   font-size: 1.3em;
 }
@@ -105,7 +105,6 @@ button {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 5fr;
   column-gap: 0;
-  /* row-gap: 1rem; */
   column-gap: 0;
 }
 
@@ -146,11 +145,7 @@ input[type="radio"]:checked:after {
   color: var(--color-secondary);
 }
 
-.button_options {
-  width: 0;
-}
-
-.footerwrapper {
+.footerBar {
   position: absolute;
   bottom: 0;
   width: 100vw;
