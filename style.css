@@ -38,10 +38,14 @@ h5 {
   font-size: 4rem;
 }
 
+/* Delete border, add border-radius to all buttons*/
+
 button {
   border-radius: var(--border-radius);
   border: 0;
 }
+
+/* Centering all elements in the app*/
 
 #app {
   display: grid;
@@ -54,6 +58,8 @@ button {
   justify-content: center;
 }
 
+/* Grid for form element */
+
 .form {
   width: fit-content;
   background-color: var(--color-background);
@@ -65,47 +71,22 @@ button {
   padding: 3rem 4rem;
 }
 
-.button_options {
+/* Delete default radio circles */
+
+.buttonOptions {
   background: var(--color-primary);
   font-size: 1rem;
   padding: 1rem 3rem;
   color: var(--color-text);
+  width: 0;
 }
 
-.inputField {
-  padding: 1rem 1rem;
-  width: fit-content;
-  border: 0;
-  width: 100%;
-}
-
-.inputField::placeholder {
-  opacity: 40%;
-  font-size: 1.3em;
-}
-
-.buttonSubmit {
-  background-color: var(--color-secondary);
-  border-radius: 2rem;
-  text-transform: uppercase;
-  color: var(--color-text);
-  letter-spacing: 0.35rem;
-  padding: 1rem;
-  border: 0;
-  width: 12rem;
-  justify-self: center;
-  transform: translateY(1em);
-}
-
-.buttonSubmit:hover {
-  letter-spacing: 0.9rem;
-}
+/* Styling radio buttons */
 
 .radioButtons {
   display: grid;
   grid-template-columns: 1fr 5fr 1fr 5fr;
   column-gap: 0;
-  /* row-gap: 1rem; */
   column-gap: 0;
 }
 
@@ -146,11 +127,41 @@ input[type="radio"]:checked:after {
   color: var(--color-secondary);
 }
 
-.button_options {
-  width: 0;
+/* Submit button */
+
+.buttonSubmit {
+  background-color: var(--color-secondary);
+  border-radius: 2rem;
+  text-transform: uppercase;
+  color: var(--color-text);
+  letter-spacing: 0.35rem;
+  padding: 1rem;
+  border: 0;
+  width: 12rem;
+  justify-self: center;
+  transform: translateY(1em);
 }
 
-.footerwrapper {
+.buttonSubmit:hover {
+  letter-spacing: 0.9rem;
+}
+
+/* Input box for names */
+
+.inputName {
+  padding: 1rem 1rem;
+  border: 0;
+  width: 100%;
+}
+
+.inputName::placeholder {
+  opacity: 40%;
+  font-size: 1.3em;
+}
+
+/* Footer */
+
+.footerBar {
   position: absolute;
   bottom: 0;
   width: 100vw;
